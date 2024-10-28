@@ -1,14 +1,39 @@
 .App {
   text-align: center;
+  height: 200vh;
+}
+
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 section {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  width: 100%;
+}
+
+#services {
+  position: relative;
+  background: black;
+}
+
+#services canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
 }
 
 #home {
