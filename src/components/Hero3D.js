@@ -1,31 +1,18 @@
-import React, { Suspense, useEffect } from 'react';
+import React from 'react';
 import { OrbitControls } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import CentralSphere from './CentralSphere';
 import ParticleSystem from './ParticleSystem';
-import LoadingScreen from './LoadingScreen';
-import useLoadingStore from './LoadingManager';
+import ConstellationServices from './ConstellationServices';
 
 const Hero3D = () => {
-  const { isLoading, setLoading } = useLoadingStore();
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
-
   return (
     <group>
-      <color attach="background" args={['#000000']} />
       <ambientLight intensity={0.05} />
       <directionalLight position={[5, 3, 5]} intensity={1} />
       <ParticleSystem />
       <CentralSphere />
+      <ConstellationServices />
       <OrbitControls enableZoom={false} enablePan={false} />
       <EffectComposer>
         <Bloom 

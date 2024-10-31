@@ -1,60 +1,13 @@
 .App {
   text-align: center;
-  height: 200vh;
-}
-
-#canvas-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100vh;
-  background: black;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-section {
-  min-height: 100vh;
-  width: 100%;
-}
-
-#services {
-  position: relative;
-  background: black;
-}
-
-#services canvas {
-  position: absolute !important;
-  top: 0;
-  left: 0;
+  background: #000;
+  overflow: hidden;
 }
 
 #home {
   height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
-
-h2 {
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Add more specific styles for each section as needed */
 
