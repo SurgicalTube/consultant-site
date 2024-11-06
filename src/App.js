@@ -10,7 +10,7 @@ import './App.css';
 
 function Experience() {
   return (
-    <ScrollControls pages={3} damping={0.3} distance={1}>
+    <ScrollControls pages={4} damping={0.3} distance={1}>
       <Scroll>
         <Hero3D />
       </Scroll>
