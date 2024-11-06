@@ -5,11 +5,12 @@ import Hero3D from './components/Hero3D';
 import Navbar from './components/Navbar';
 import LoadingScreen from './components/LoadingScreen';
 import useLoadingStore from './components/LoadingManager';
+import { ServiceProvider } from './contexts/ServiceContext';
 import './App.css';
 
 function Experience() {
   return (
-    <ScrollControls pages={2} damping={0.3} distance={1}>
+    <ScrollControls pages={3} damping={0.3} distance={1}>
       <Scroll>
         <Hero3D />
       </Scroll>
@@ -27,19 +28,21 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      {isLoading ? (
-        <LoadingScreen />
-      ) : (
-        <div id="home">
-          <Canvas camera={{ position: [0, 0, 30], fov: 75 }}>
-            <color attach="background" args={['#000000']} />
-            <Experience />
-          </Canvas>
-        </div>
-      )}
-    </div>
+    <ServiceProvider>
+      <div className="App">
+        <Navbar />
+        {isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <div id="home">
+            <Canvas camera={{ position: [0, 0, 30], fov: 75 }}>
+              <color attach="background" args={['#000000']} />
+              <Experience />
+            </Canvas>
+          </div>
+        )}
+      </div>
+    </ServiceProvider>
   );
 }
 

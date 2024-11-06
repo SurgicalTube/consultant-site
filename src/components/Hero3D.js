@@ -3,7 +3,7 @@ import { OrbitControls } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import CentralSphere from './CentralSphere';
 import ParticleSystem from './ParticleSystem';
-import ConstellationServices from './ConstellationServices';
+import { ConstellationServices } from './services';
 
 const Hero3D = () => {
   return (
