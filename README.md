@@ -1,51 +1,40 @@
-# 3D Interactive Portfolio Experience
+# Interactive 3D Portfolio Experience
 
-A cutting-edge web application that pushes the boundaries of what's possible in browser-based 3D graphics. Built entirely with React, Three.js, and custom WebGL shaders, this project demonstrates advanced technical capabilities in real-time 3D rendering and interactive user experiences.
+A React-based web application showcasing interactive 3D graphics using Three.js. This project demonstrates the integration of modern web technologies with real-time 3D rendering to create an engaging user interface.
 
-## Technical Highlights
+## Key Features
 
-### Custom Shader Development
-- Implemented advanced GLSL shaders for realistic glass morphism effects
-- Created dynamic day/night cycle shader for Earth visualization
-- Custom particle system shaders for performance optimization
+### 3D Visualization
+- Interactive Earth model with day/night cycle visualization
+- Dynamic particle system with 8,000+ particles using instanced rendering
+- Custom glass-like panels with hover effects and dynamic lighting
+- Smooth orbital camera controls for immersive navigation
 
-### Advanced Three.js Implementation
-- Custom-built floating panel system with dynamic lighting and shadows
-- Real-time interactive 3D elements with physics-based animations
-- Optimized instanced mesh rendering for particle systems (handling 8000+ particles)
-- Custom raycasting system for precise user interactions
+### Technical Implementation
+- Built with React 18 and Three.js
+- React Three Fiber for declarative 3D scene management
+- Basic GLSL shader implementation for Earth day/night cycle
+- Efficient particle rendering using instanced meshes
+- State management with Zustand
 
-### Performance Optimization
-- Efficient memory management through instanced geometry
-- Custom LOD (Level of Detail) system for particle rendering
-- Optimized render cycles with proper depth testing and transparency handling
-- Strategic use of useFrame and useMemo for render performance
-
-### Notable Features
-- Custom glass morphism effect without relying on CSS or external libraries
-- Real-time environment mapping for realistic reflections
-- Dynamic lighting system with custom attenuation
-- Smooth camera transitions and orbital controls
-- Interactive UI elements with 3D depth integration
-
-## Technical Stack
-- React 18 with TypeScript
-- Three.js with custom WebGL shaders
-- React Three Fiber for React integration
-- Custom GLSL shader programming
-- Advanced state management with Zustand
-
-## Performance Metrics
-- Maintains 60 FPS with 8000+ particles
-- Optimized memory usage under 100MB
-- Smooth interactions across all modern browsers
+### Performance Features
+- Optimized particle system using instanced geometry
+- Efficient render management with useFrame and useMemo
+- Smooth animations and transitions
 - Mobile-responsive 3D rendering
 
-## Development Challenges Overcome
-- Implemented custom depth sorting for transparent objects
-- Created efficient particle systems without impacting performance
-- Developed custom shader solutions for glass effects
-- Optimized render cycles for complex 3D scenes
-- Seamless integration of 2D UI with 3D space
+## Technical Stack
+- React 18
+- TypeScript
+- Three.js / React Three Fiber
+- @react-three/drei for 3D utilities
+- @react-three/postprocessing for visual effects
 
-This project represents a significant technical achievement in web-based 3D graphics, demonstrating expertise in both front-end development and computer graphics programming. Every component, from the particle systems to the interactive panels, was custom-built without relying on pre-made assets or templates.
+## Development Highlights
+- Custom implementation of floating panel system
+- Interactive particle systems with orbital and field effects
+- Basic shader programming for Earth visualization
+- Responsive 3D scene management
+- Integration of 2D UI elements in 3D space
+
+This project serves as a demonstration of 3D web graphics capabilities using React and Three.js, showcasing practical implementation of real-time 3D rendering in a web browser.
