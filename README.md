@@ -2,6 +2,29 @@
 
 A React-based web application showcasing interactive 3D graphics using Three.js. This project demonstrates the integration of modern web technologies with real-time 3D rendering to create an engaging user interface.
 
+## Project Status & Scope
+
+**⚠️ Note: This is a technical proof-of-concept**
+
+This project is intentionally focused on demonstrating technical capabilities in browser-based 3D graphics rather than presenting a polished, production-ready application. Specifically, it showcases:
+
+- Implementation of custom Three.js scenes and components
+- Real-time 3D rendering with particle systems
+- Basic GLSL shader programming
+- Integration of 3D graphics with React
+- Performance optimization techniques for complex 3D scenes
+
+The current styling, UI/UX, and overall polish are intentionally minimal, as the primary goal is to demonstrate the technical implementation of browser-based 3D graphics created purely through code, without relying on pre-built 3D models or external 3D modeling software.
+
+### Future Improvements
+- Enhanced UI/UX design
+- Responsive design optimization
+- Additional interactive features
+- Performance optimization for mobile devices
+- Accessibility improvements
+
+_This project serves as a technical demonstration and starting point for more refined implementations._
+
 ## Key Features
 
 ### 3D Visualization
